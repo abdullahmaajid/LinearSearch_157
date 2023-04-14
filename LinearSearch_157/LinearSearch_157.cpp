@@ -31,13 +31,19 @@ void input()
 void LinearSearch()
 {
 	char ch;
-	int comparison;																					// Number of Comparisons
+	int comparison;																				// Number of Comparisons
 
 	do
 	{
 		// Accept the number to eb searched
-		cout << "\n Enter element array  you wnt tp search ";										// Langkah 1
+		cout << "\n Enter element array  you want tp search : ";								// Langkah 1
 		int item;
-		cin >> item
+		cin >> item;
+
+			comparison = 0;
+			for (i = 0; i < n; i++)																	// Langkah 2,3,4	
+			{
+				
+			}
 	}
 }
