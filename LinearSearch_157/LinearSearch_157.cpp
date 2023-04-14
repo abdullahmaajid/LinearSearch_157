@@ -17,6 +17,13 @@ void input()
 			cout << "\n Array should have minimum 1 amd maximum 20 element. \n\n";
 	}
 
-	
-
+	// Accept array elements
+	cout << "\n-------------------\n";
+	cout << " Enter array element \n";
+	cout << "---------------------\n";
+	for (i = 0; i < n; i++)
+	{
+		cout << "<" << (i + 1) << ">";
+		cin >> arr[i];
+	}
 }
