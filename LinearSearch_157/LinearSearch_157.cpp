@@ -50,5 +50,15 @@ void LinearSearch()
 					break;
 				}
 			}
+
+			if (i == n)																			// Langkah 5 b not found
+				cout << "\n" << item << " Not found in the array \n";
+			cout << "\n Number of comparisons : " << comparison << endl;
+
+			cout << "\n Continue sear (y/n); ";
+			cin >> ch;
+
+
+
 	}
 }
