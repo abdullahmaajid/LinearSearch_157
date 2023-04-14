@@ -57,8 +57,5 @@ void LinearSearch()
 
 			cout << "\n Continue sear (y/n); ";
 			cin >> ch;
-
-
-
-	}
+	} while ((ch == 'y') || (ch == 'Y'));
 }
