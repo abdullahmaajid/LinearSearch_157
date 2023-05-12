@@ -62,7 +62,61 @@ void LinearSearch()
 
 int main()
 {
-	LinearSearch();
 	input();
-	
+	LinearSearch();
+}
+
+
+#include <iostream> 
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+
+	// Masukkan Jumlah Array yang telah ditentukan
+
+	//5+7+1+2+20-20+10+2+3+5
+	int jed = 30;
+	int arr[jed];
+
+	// Mengisi array dengan angka secara otomatis
+	for (int i = 0; i < jed; i++) {
+		arr[i] = i;
+	}
+
+	//INPUT//
+
+	// Meminta input angka yang ingin dicari
+	int x;
+	cout << "Masukkan angka yang ingin dicari: ";
+	cin >> x;
+
+	//ALGORITHM//
+
+	// Melakukan binary search
+
+	//lowerbond = abdullah
+	//upperbond = maajid
+
+	int abdullah = 0;
+	int maajid = jed - 1;
+	while (abdullah <= maajid) {
+		int mid = (abdullah + maajid) / 2;
+
+
+		if (arr[mid] == x) {
+			cout << "Angka ditemukan pada indeks ke-" << mid << endl;
+			return 0;
+		}
+		else if (x < arr[mid]) {
+			maajid = mid - 1;
+		}
+		else {
+			abdullah = mid + 1;
+		}
+	}
+
+	cout << "Angka tidak ditemukan dalam array" << endl;
+	return 0;
 }
